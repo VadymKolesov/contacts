@@ -10,12 +10,12 @@ function Contact({ id, name, number }) {
     <div className={css.card}>
       <div className={css.contact}>
         <div>
-          <BsFillPersonFill size={18} />
-          <p>{name}</p>
+          <BsFillPersonFill size={16} />
+          <p className={css.member}>{name}</p>
         </div>
         <div>
-          <BsFillTelephoneFill size={18} />
-          <p>{number}</p>
+          <BsFillTelephoneFill size={16} />
+          <p className={css.number}>{number}</p>
         </div>
       </div>
       <button

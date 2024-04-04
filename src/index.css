@@ -4,6 +4,11 @@
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --black: #111212;
+  --white: #fff;
+  --dark: #292e2e;
+  --light-grey: #ebeded;
+  --grey: #c5c9c9;
 }
 
 a {
@@ -11,8 +16,13 @@ a {
 }
 
 body {
-  padding: 0 50px;
   margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 0 70px;
 }
 
 input {

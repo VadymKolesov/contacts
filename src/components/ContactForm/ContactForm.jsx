@@ -31,23 +31,23 @@ function ContactForm() {
       >
         {({ errors, touched }) => (
           <Form className={css.form}>
-            <div>
-              <label htmlFor="name">Name</label>
-              <Field className={css.input} id="name" name="name" />
-              {errors.name && touched.name ? (
-                <p className={css.error}>{errors.name}</p>
-              ) : null}
-            </div>
-            <div>
-              <label htmlFor="number">Number</label>
-              <Field className={css.input} id="number" name="number" />
-              {errors.number && touched.number ? (
-                <p className={css.error}>{errors.number}</p>
-              ) : null}
-            </div>
-            <button className={css.btn} type="submit">
-              Add contact
-            </button>
+            <ul>
+              <li>
+                <label htmlFor="name">Name</label>
+                <Field className={css.input} id="name" name="name" />
+                {errors.name && touched.name ? (
+                  <p className={css.error}>{errors.name}</p>
+                ) : null}
+              </li>
+              <li>
+                <label htmlFor="number">Number</label>
+                <Field className={css.input} id="number" name="number" />
+                {errors.number && touched.number ? (
+                  <p className={css.error}>{errors.number}</p>
+                ) : null}
+              </li>
+            </ul>
+            <button type="submit">Add contact</button>
           </Form>
         )}
       </Formik>

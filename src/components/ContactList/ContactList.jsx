@@ -10,7 +10,7 @@ function ContactList() {
     <ul className={css.list}>
       {contacts.map((contact) => {
         return (
-          <li key={contact.id}>
+          <li key={contact.id} className={css.item}>
             <Contact
               id={contact.id}
               name={contact.name}

@@ -1,15 +1,21 @@
 .search {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  max-width: 300px;
-  margin: 20px auto 0 auto;
+  gap: 20px;
+  width: 400px;
+  margin-top: 50px;
 }
 
 .input {
-  padding: 5px 10px;
+  padding: 10px 10px;
   display: flex;
-  border: 1px solid black;
-  border-radius: 5px;
+  border: 1px solid var(--grey);
+  border-radius: 10px;
   width: 100%;
+  transition: all 400ms ease-in-out;
+}
+
+.input:hover,
+.input:focus {
+  border: 1px solid var(--black);
 }
